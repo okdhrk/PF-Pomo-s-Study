@@ -1,0 +1,11 @@
+<h1>Tweets#index</h1>
+<p>Find me in app/views/tweets/index.html.erb</p>
+
+<% @tweets.each do |tweet| %>
+<div>
+  <p>内容：<%= tweet.body %></p>
+  <p>ユーザーネーム：<%= tweet.user.name %></p>
+</div>
+<% end %>
+
+<%= link_to "Tweetsのshow", tweet_path(@tweets) %>
