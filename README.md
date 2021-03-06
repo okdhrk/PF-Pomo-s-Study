@@ -37,3 +37,8 @@ https://docs.google.com/spreadsheets/d/1zad_6SejdDI8-3nuQs_cqHUrW3rHijGM2gzJfV3x
 - フレームワーク：Ruby on Rails
 - JS ライブラリ：jQuery
 - IDE：Cloud9
+- 
+  resources :users, only: [:edit, :index, :show, :update]
+  get 'users/unsubscribe' => 'users#unsubscribe'
+
+  resources :tweets, only: [:destroy, :index, :new, :show, :create]

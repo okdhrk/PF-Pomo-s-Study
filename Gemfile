@@ -70,3 +70,5 @@ gem 'dotenv-rails'
 # 画像
 gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
+
+gem 'bootstrap', '~> 4.5'
